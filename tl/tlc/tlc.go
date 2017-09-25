@@ -6,7 +6,7 @@ import (
 	"go/format"
 	"log"
 
-	"github.com/andreyvit/telegramapi/tl/tlschema"
+	"github.com/PROger4ever/telegramapi/tl/tlschema"
 )
 
 type Options struct {
@@ -34,7 +34,7 @@ func GenerateGoCode(sch *tlschema.Schema, options Options) string {
 		buf.WriteString("\n")
 
 		var imports []string
-		imports = append(imports, "github.com/andreyvit/telegramapi/tl")
+		imports = append(imports, "github.com/PROger4ever/telegramapi/tl")
 		imports = append(imports, rm.GoImports()...)
 		importsSet := make(map[string]bool)
 

@@ -6,7 +6,7 @@ import (
 	// "sort"
 	"time"
 
-	"github.com/andreyvit/telegramapi/mtproto"
+	"github.com/PROger4ever/telegramapi/mtproto"
 )
 
 type ChatType int

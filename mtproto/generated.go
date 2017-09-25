@@ -3,7 +3,7 @@ package mtproto
 
 import (
 	"errors"
-	"github.com/andreyvit/telegramapi/tl"
+	"github.com/PROger4ever/telegramapi/tl"
 	"math/big"
 	"time"
 )

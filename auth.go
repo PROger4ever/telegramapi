@@ -5,7 +5,7 @@ import (
 	"crypto/sha256"
 	"log"
 
-	"github.com/andreyvit/telegramapi/mtproto"
+	"github.com/PROger4ever/telegramapi/mtproto"
 )
 
 type LoginState int

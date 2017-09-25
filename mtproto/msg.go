@@ -1,7 +1,7 @@
 package mtproto
 
 import (
-	"github.com/andreyvit/telegramapi/tl"
+	"github.com/PROger4ever/telegramapi/tl"
 )
 
 type MsgType int

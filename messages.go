@@ -1,7 +1,7 @@
 package telegramapi
 
 import (
-	"github.com/andreyvit/telegramapi/mtproto"
+	"github.com/PROger4ever/telegramapi/mtproto"
 	"log"
 	"time"
 )

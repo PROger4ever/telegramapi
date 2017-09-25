@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/andreyvit/telegramapi/mtproto"
-	"github.com/andreyvit/telegramapi/tl"
+	"github.com/PROger4ever/telegramapi/mtproto"
+	"github.com/PROger4ever/telegramapi/tl"
 )
 
 func readAuth(o *mtproto.AuthResult, fs *mtproto.FramerState, r *tl.Reader, ver int) {

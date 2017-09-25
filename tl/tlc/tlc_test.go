@@ -1,9 +1,9 @@
 package tlc
 
 import (
-	"github.com/andreyvit/diff"
-	"github.com/andreyvit/telegramapi/tl/knownschemas"
-	"github.com/andreyvit/telegramapi/tl/tlschema"
+	"github.com/PROger4ever/diff"
+	"github.com/PROger4ever/telegramapi/tl/knownschemas"
+	"github.com/PROger4ever/telegramapi/tl/tlschema"
 	"testing"
 )
 

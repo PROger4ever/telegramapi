@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/andreyvit/telegramapi"
+	"github.com/PROger4ever/telegramapi"
 )
 
 type Format int

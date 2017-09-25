@@ -4,7 +4,7 @@ import (
 	"crypto/aes"
 	"crypto/sha1"
 	"errors"
-	"github.com/andreyvit/telegramapi/cryptige"
+	"github.com/PROger4ever/telegramapi/cryptige"
 	"io"
 )
 

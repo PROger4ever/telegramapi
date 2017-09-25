@@ -9,9 +9,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/andreyvit/telegramapi/tl/knownschemas"
-	"github.com/andreyvit/telegramapi/tl/tlc"
-	"github.com/andreyvit/telegramapi/tl/tlschema"
+	"github.com/PROger4ever/telegramapi/tl/knownschemas"
+	"github.com/PROger4ever/telegramapi/tl/tlc"
+	"github.com/PROger4ever/telegramapi/tl/tlschema"
 )
 
 func Usage() {

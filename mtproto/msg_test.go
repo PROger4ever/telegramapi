@@ -3,7 +3,7 @@ package mtproto
 import (
 	"testing"
 
-	"github.com/andreyvit/telegramapi/tl"
+	"github.com/PROger4ever/telegramapi/tl"
 )
 
 func TestMsgType(t *testing.T) {

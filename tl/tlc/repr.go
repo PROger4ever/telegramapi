@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/andreyvit/telegramapi/tl/tlschema"
+	"github.com/PROger4ever/telegramapi/tl/tlschema"
 )
 
 type CodeGenOptions struct {

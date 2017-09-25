@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"crypto/sha1"
 	"errors"
-	"github.com/andreyvit/telegramapi/tl"
+	"github.com/PROger4ever/telegramapi/tl"
 	"io"
 	"log"
 )

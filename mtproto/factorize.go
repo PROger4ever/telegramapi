@@ -5,7 +5,7 @@ import (
 	// "math"
 	"sync"
 
-	fact "github.com/andreyvit/telegramapi/factorize"
+	fact "github.com/PROger4ever/telegramapi/factorize"
 )
 
 // var knownPs = []uint64{1229739323}

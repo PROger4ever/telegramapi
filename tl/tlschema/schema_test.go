@@ -1,7 +1,7 @@
 package tlschema
 
 import (
-	"github.com/andreyvit/telegramapi/tl/knownschemas"
+	"github.com/PROger4ever/telegramapi/tl/knownschemas"
 	"testing"
 )
 

@@ -7,13 +7,13 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/andreyvit/telegramapi/binints"
-	"github.com/andreyvit/telegramapi/tl/knownschemas"
+	"github.com/PROger4ever/telegramapi/binints"
+	"github.com/PROger4ever/telegramapi/tl/knownschemas"
 	"io"
 	"log"
 	"sync"
 
-	"github.com/andreyvit/telegramapi/tl"
+	"github.com/PROger4ever/telegramapi/tl"
 )
 
 //go:generate go install ../tl/cmd/tlc

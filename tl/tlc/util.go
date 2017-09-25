@@ -1,7 +1,7 @@
 package tlc
 
 import (
-	"github.com/andreyvit/telegramapi/tl/tlschema"
+	"github.com/PROger4ever/telegramapi/tl/tlschema"
 )
 
 func IDConstName(comb *tlschema.Comb) string {

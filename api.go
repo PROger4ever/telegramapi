@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/andreyvit/telegramapi/mtproto"
-	"github.com/andreyvit/telegramapi/tl"
+	"github.com/PROger4ever/telegramapi/mtproto"
+	"github.com/PROger4ever/telegramapi/tl"
 )
 
 type Options struct {

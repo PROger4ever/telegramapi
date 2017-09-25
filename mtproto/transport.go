@@ -8,8 +8,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/andreyvit/telegramapi/binints"
-	"github.com/andreyvit/telegramapi/tl"
+	"github.com/PROger4ever/telegramapi/binints"
+	"github.com/PROger4ever/telegramapi/tl"
 )
 
 type TCPReader interface {

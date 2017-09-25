@@ -4,7 +4,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/andreyvit/telegramapi/tl"
+	"github.com/PROger4ever/telegramapi/tl"
 	"github.com/chzyer/readline"
 	"github.com/kr/pretty"
 	"io/ioutil"
@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/andreyvit/telegramapi"
+	"github.com/PROger4ever/telegramapi"
 )
 
 const publicKey = `
