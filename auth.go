@@ -50,7 +50,7 @@ func (c *Conn) StartLogin(phoneNumber string) error {
 	}
 }
 
-func (c *Conn) CompleteLoginWithCode(code string) error {
+func (c *Conn) CompleteLoginWithCode(code string) (*mtproto.TLAuthAuthorization, error) {
 	c.stateMut.Lock()
 	req := &mtproto.TLAuthSignIn{
 		PhoneNumber:   c.state.PhoneNumber,
@@ -61,14 +61,14 @@ func (c *Conn) CompleteLoginWithCode(code string) error {
 
 	r, err := c.Send(req)
 	if err != nil {
-		return err
+		return nil, err
 	}
 	if r1, ok := r.(*mtproto.TLAuthAuthorization); ok {
 		if c.Verbose >= 2 {
 			log.Printf("Got auth.signIn response: %v", r1)
 		}
 		c.completeLogin(r1)
-		return nil
+		return r1, nil
 	} else if r2, ok := r.(*mtproto.TLRPCError); ok && r2.ErrorMessage == "SESSION_PASSWORD_NEEDED" {
 		if c.Verbose >= 2 {
 			log.Printf("Got auth.signIn response: %v", r2)
@@ -77,10 +77,10 @@ func (c *Conn) CompleteLoginWithCode(code string) error {
 			state.LoginState = WaitingFor2FA
 		})
 	} else {
-		return c.HandleUnknownReply(r)
+		return nil, c.HandleUnknownReply(r)
 	}
 
-	return nil
+	return nil, nil
 }
 
 func (c *Conn) completeLogin(auth *mtproto.TLAuthAuthorization) {
