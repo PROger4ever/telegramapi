@@ -68,6 +68,7 @@ func (c *Conn) CompleteLoginWithCode(code string) (*mtproto.TLAuthAuthorization,
 			log.Printf("Got auth.signIn response: %v", r1)
 		}
 		c.completeLogin(r1)
+		c.saveSessionState()
 		return r1, nil
 	} else if r2, ok := r.(*mtproto.TLRPCError); ok && r2.ErrorMessage == "SESSION_PASSWORD_NEEDED" {
 		if c.Verbose >= 2 {

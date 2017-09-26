@@ -151,6 +151,7 @@ func (c *Conn) saveSessionState() {
 	c.updateState(func(state *State) {
 		id := c.session.DC()
 		dc := state.DCs[id]
+		c.state.PreferredDC = id
 		if dc != nil {
 			if auth.KeyID != 0 || dc.Auth.KeyID == 0 {
 				dc.Auth = *auth
