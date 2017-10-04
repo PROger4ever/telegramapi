@@ -1,17 +1,18 @@
 package telegramapi
 
 import (
-	"github.com/PROger4ever/telegramapi/mtproto"
 	"log"
 	"time"
+
+	"github.com/PROger4ever/telegramapi/mtproto"
 )
 
-func (c *Conn) LoadChats(contacts *ContactList) error {
+func (c *Conn) LoadChats(contacts *ContactList, limit int, offsetPeer mtproto.TLInputPeerType) error {
 	log.Printf("Loading list of chats...")
 	r, err := c.Send(&mtproto.TLMessagesGetDialogs{
 		Flags:      0,
-		Limit:      1000,
-		OffsetPeer: &mtproto.TLInputPeerEmpty{},
+		Limit:      limit,
+		OffsetPeer: offsetPeer,
 	})
 	if err != nil {
 		return err
